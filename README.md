@@ -232,8 +232,9 @@ drwxr-xr-x  kali kali Desktop
 
 ## Screenshot
 
-![ls -la command](images/ls-la-command.png)
+![ls -la command 1](images/ls-la-command-1.png)
 
+![ls -la command 2](images/ls-la-command-2.png)
 ---
 
 # 6. cd foldername
@@ -340,7 +341,9 @@ clear
 
 ## Screenshot
 
-![clear command](images/clear-command.png)
+![clear command 1](images/clear-command-1.png)
+
+![clear command 2](images/clear-command-2.png)
 
 ---
 
