@@ -697,24 +697,23 @@ Linux-Commands-Practice/
 │
 ├── README.md
 │
-└── images/
-    ├── pwd-command.png
-    ├── ls-command.png
-    ├── ls-l-command.png
-    ├── ls-a-command.png
-    ├── ls-la-command-1.png
-    ├── ls-la-command-2.png
-    ├── cd-documents-command.png
-    ├── cd-back-command.png
-    ├── clear-command-1.png
-    ├── clear-command-2.png
-    ├── mkdir-command.png
-    ├── touch-command.png
-    ├── cp-command.png
-    ├── mv-command.png
-    ├── rm-command.png
-    ├── rm-r-command.png
-    └── cat-command.png
+├── pwd-command.png
+├── ls-command.png
+├── ls-l-command.png
+├── ls-a-command.png
+├── ls-la-command-1.png
+├── ls-la-command-2.png
+├── cd-documents-command.png
+├── cd-back-command.png
+├── clear-command-1.png
+├── clear-command-2.png
+├── mkdir-command.png
+├── touch-command.png
+├── cp-command.png
+├── mv-command.png
+├── rm-command.png
+├── rm-r-command.png
+└── cat-command.png
 ```
 
 ---
