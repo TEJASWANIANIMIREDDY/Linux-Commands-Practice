@@ -69,7 +69,7 @@ pwd
 
 ## Screenshot
 
-![pwd command](images/pwd-command.png)
+![pwd command](pwd-command.png)
 
 ---
 
