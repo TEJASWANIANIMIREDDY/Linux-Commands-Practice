@@ -11,7 +11,7 @@
 
 A beginner-friendly Linux commands practice repository created while learning Kali Linux using VirtualBox.
 
-This repository contains basic Linux commands along with:
+This repository contains Linux commands along with:
 - meaning
 - syntax
 - examples
@@ -22,7 +22,7 @@ The purpose of this repository is to document Linux command practice and improve
 
 ---
 
-# Commands Covered
+# Basic Navigation Commands
 
 - `pwd`
 - `ls`
@@ -32,6 +32,18 @@ The purpose of this repository is to document Linux command practice and improve
 - `cd`
 - `cd ..`
 - `clear`
+
+---
+
+# File Management Commands
+
+- `mkdir`
+- `touch`
+- `cp`
+- `mv`
+- `rm`
+- `rm -r`
+- `cat`
 
 ---
 
@@ -141,7 +153,7 @@ ls -l
 
 ```bash
 drwxr-xr-x 2 kali kali 4096 Desktop
--rw-r--r-- 1 kali kali  220 file.txt
+-rw-r--r-- 1 kali kali 220 file.txt
 ```
 
 ---
@@ -224,7 +236,7 @@ ls -la
 ### Output Example
 
 ```bash
-drwxr-xr-x  kali kali Desktop
+drwxr-xr-x kali kali Desktop
 -rw-r--r-- kali kali .bashrc
 ```
 
@@ -235,6 +247,7 @@ drwxr-xr-x  kali kali Desktop
 ![ls -la command 1](ls-la-command-1.png)
 
 ![ls -la command 2](ls-la-command-2.png)
+
 ---
 
 # 6. cd foldername
@@ -347,6 +360,317 @@ clear
 
 ---
 
+# 9. mkdir
+
+## Meaning
+
+`mkdir` stands for **Make Directory**.
+
+It is used to create a new folder/directory.
+
+---
+
+## Syntax
+
+```bash
+mkdir foldername
+```
+
+---
+
+## Example
+
+```bash
+mkdir test
+```
+
+---
+
+## Verification
+
+```bash
+ls
+```
+
+### Output Example
+
+```bash
+Desktop Documents Downloads test
+```
+
+---
+
+## Screenshot
+
+![mkdir command](mkdir-command.png)
+
+---
+
+# 10. touch
+
+## Meaning
+
+`touch` is used to create a new empty file.
+
+---
+
+## Syntax
+
+```bash
+touch filename
+```
+
+---
+
+## Example
+
+```bash
+touch file.txt
+```
+
+---
+
+## Verification
+
+```bash
+ls
+```
+
+### Output Example
+
+```bash
+file.txt
+```
+
+---
+
+## Screenshot
+
+![touch command](touch-command.png)
+
+---
+
+# 11. cp
+
+## Meaning
+
+`cp` stands for **Copy**.
+
+It is used to copy files from one location to another.
+
+---
+
+## Syntax
+
+```bash
+cp sourcefile destinationfile
+```
+
+---
+
+## Example
+
+```bash
+cp file.txt copy.txt
+```
+
+---
+
+## Verification
+
+```bash
+ls
+```
+
+### Output Example
+
+```bash
+file.txt copy.txt
+```
+
+---
+
+## Screenshot
+
+![cp command](cp-command.png)
+
+---
+
+# 12. mv
+
+## Meaning
+
+`mv` stands for **Move**.
+
+It is used to move or rename files and folders.
+
+---
+
+## Syntax
+
+```bash
+mv oldname newname
+```
+
+---
+
+## Example
+
+```bash
+mv copy.txt newfile.txt
+```
+
+---
+
+## Verification
+
+```bash
+ls
+```
+
+### Output Example
+
+```bash
+file.txt newfile.txt
+```
+
+---
+
+## Screenshot
+
+![mv command](mv-command.png)
+
+---
+
+# 13. rm
+
+## Meaning
+
+`rm` stands for **Remove**.
+
+It is used to delete files.
+
+---
+
+## Syntax
+
+```bash
+rm filename
+```
+
+---
+
+## Example
+
+```bash
+rm newfile.txt
+```
+
+---
+
+## Verification
+
+```bash
+ls
+```
+
+### Output Example
+
+```bash
+file.txt
+```
+
+---
+
+## Screenshot
+
+![rm command](rm-command.png)
+
+---
+
+# 14. rm -r
+
+## Meaning
+
+`rm -r` is used to delete folders/directories recursively along with their contents.
+
+---
+
+## Syntax
+
+```bash
+rm -r foldername
+```
+
+---
+
+## Example
+
+```bash
+rm -r test
+```
+
+---
+
+## Verification
+
+```bash
+ls
+```
+
+### Output Example
+
+```bash
+Desktop Documents Downloads
+```
+
+---
+
+## Screenshot
+
+![rm -r command](rm-r-command.png)
+
+---
+
+# 15. cat
+
+## Meaning
+
+`cat` stands for **Concatenate**.
+
+It is used to view the contents of a file.
+
+---
+
+## Syntax
+
+```bash
+cat filename
+```
+
+---
+
+## Example
+
+```bash
+echo "Hello Linux" > file.txt
+cat file.txt
+```
+
+### Output
+
+```bash
+Hello Linux
+```
+
+---
+
+## Screenshot
+
+![cat command](cat-command.png)
+
+---
+
 # Tools Used
 
 - Kali Linux
@@ -378,10 +702,19 @@ Linux-Commands-Practice/
     ├── ls-command.png
     ├── ls-l-command.png
     ├── ls-a-command.png
-    ├── ls-la-command.png
+    ├── ls-la-command-1.png
+    ├── ls-la-command-2.png
     ├── cd-documents-command.png
     ├── cd-back-command.png
-    └── clear-command.png
+    ├── clear-command-1.png
+    ├── clear-command-2.png
+    ├── mkdir-command.png
+    ├── touch-command.png
+    ├── cp-command.png
+    ├── mv-command.png
+    ├── rm-command.png
+    ├── rm-r-command.png
+    └── cat-command.png
 ```
 
 ---
