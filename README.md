@@ -105,7 +105,7 @@ Desktop Documents Downloads Pictures Videos
 
 ## Screenshot
 
-![ls command](images/ls-command.png)
+![ls command](ls-command.png)
 
 ---
 
@@ -148,7 +148,7 @@ drwxr-xr-x 2 kali kali 4096 Desktop
 
 ## Screenshot
 
-![ls -l command](images/ls-l-command.png)
+![ls -l command](ls-l-command.png)
 
 ---
 
@@ -186,7 +186,7 @@ ls -a
 
 ## Screenshot
 
-![ls -a command](images/ls-a-command.png)
+![ls -a command](ls-a-command.png)
 
 ---
 
@@ -232,9 +232,9 @@ drwxr-xr-x  kali kali Desktop
 
 ## Screenshot
 
-![ls -la command 1](images/ls-la-command-1.png)
+![ls -la command 1](ls-la-command-1.png)
 
-![ls -la command 2](images/ls-la-command-2.png)
+![ls -la command 2](ls-la-command-2.png)
 ---
 
 # 6. cd foldername
@@ -272,7 +272,7 @@ pwd
 
 ## Screenshot
 
-![cd command](images/cd-documents-command.png)
+![cd command](cd-documents-command.png)
 
 ---
 
@@ -309,7 +309,7 @@ pwd
 
 ## Screenshot
 
-![cd back command](images/cd-back-command.png)
+![cd back command](cd-back-command.png)
 
 ---
 
@@ -341,9 +341,9 @@ clear
 
 ## Screenshot
 
-![clear command 1](images/clear-command-1.png)
+![clear command 1](clear-command-1.png)
 
-![clear command 2](images/clear-command-2.png)
+![clear command 2](clear-command-2.png)
 
 ---
 
