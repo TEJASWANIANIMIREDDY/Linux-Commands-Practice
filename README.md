@@ -47,6 +47,15 @@ The purpose of this repository is to document Linux command practice and improve
 
 ---
 
+# User Management Commands
+
+- `whoami`
+- `passwd`
+- `sudo`
+- `id`
+
+---
+
 # 1. pwd
 
 ## Meaning
@@ -81,7 +90,7 @@ pwd
 
 ## Screenshot
 
-![pwd command](pwd-command.png)
+![pwd command](images/pwd-command.png)
 
 ---
 
@@ -117,7 +126,7 @@ Desktop Documents Downloads Pictures Videos
 
 ## Screenshot
 
-![ls command](ls-command.png)
+![ls command](images/ls-command.png)
 
 ---
 
@@ -160,7 +169,7 @@ drwxr-xr-x 2 kali kali 4096 Desktop
 
 ## Screenshot
 
-![ls -l command](ls-l-command.png)
+![ls -l command](images/ls-l-command.png)
 
 ---
 
@@ -198,7 +207,7 @@ ls -a
 
 ## Screenshot
 
-![ls -a command](ls-a-command.png)
+![ls -a command](images/ls-a-command.png)
 
 ---
 
@@ -244,9 +253,9 @@ drwxr-xr-x kali kali Desktop
 
 ## Screenshot
 
-![ls -la command 1](ls-la-command-1.png)
+![ls -la command 1](images/ls-la-command-1.png)
 
-![ls -la command 2](ls-la-command-2.png)
+![ls -la command 2](images/ls-la-command-2.png)
 
 ---
 
@@ -285,7 +294,7 @@ pwd
 
 ## Screenshot
 
-![cd command](cd-documents-command.png)
+![cd command](images/cd-documents-command.png)
 
 ---
 
@@ -322,7 +331,7 @@ pwd
 
 ## Screenshot
 
-![cd back command](cd-back-command.png)
+![cd back command](images/cd-back-command.png)
 
 ---
 
@@ -354,9 +363,9 @@ clear
 
 ## Screenshot
 
-![clear command 1](clear-command-1.png)
+![clear command 1](images/clear-command-1.png)
 
-![clear command 2](clear-command-2.png)
+![clear command 2](images/clear-command-2.png)
 
 ---
 
@@ -402,7 +411,7 @@ Desktop Documents Downloads test
 
 ## Screenshot
 
-![mkdir command](mkdir-command.png)
+![mkdir command](images/mkdir-command.png)
 
 ---
 
@@ -446,7 +455,7 @@ file.txt
 
 ## Screenshot
 
-![touch command](touch-command.png)
+![touch command](images/touch-command.png)
 
 ---
 
@@ -492,7 +501,7 @@ file.txt copy.txt
 
 ## Screenshot
 
-![cp command](cp-command.png)
+![cp command](images/cp-command.png)
 
 ---
 
@@ -538,7 +547,7 @@ file.txt newfile.txt
 
 ## Screenshot
 
-![mv command](mv-command.png)
+![mv command](images/mv-command.png)
 
 ---
 
@@ -584,7 +593,7 @@ file.txt
 
 ## Screenshot
 
-![rm command](rm-command.png)
+![rm command](images/rm-command.png)
 
 ---
 
@@ -628,7 +637,7 @@ Desktop Documents Downloads
 
 ## Screenshot
 
-![rm -r command](rm-r-command.png)
+![rm -r command](images/rm-r-command.png)
 
 ---
 
@@ -667,7 +676,161 @@ Hello Linux
 
 ## Screenshot
 
-![cat command](cat-command.png)
+![cat command](images/cat-command.png)
+
+---
+
+# 16. whoami
+
+## Meaning
+
+`whoami` is used to display the current logged-in username.
+
+---
+
+## Syntax
+
+```bash
+whoami
+```
+
+---
+
+## Example
+
+```bash
+whoami
+```
+
+### Output
+
+```bash
+kali
+```
+
+---
+
+## Screenshot
+
+![whoami command](images/whoami-command.png)
+
+---
+
+# 17. passwd
+
+## Meaning
+
+`passwd` is used to change the password of the current user account.
+
+---
+
+## Syntax
+
+```bash
+passwd
+```
+
+---
+
+## Example
+
+```bash
+passwd
+```
+
+### Output Example
+
+```bash
+Changing password for kali
+Current password:
+New password:
+Retype new password:
+```
+
+> ⚠️ Do not show your actual password in screenshots.
+
+---
+
+## Screenshot
+
+![passwd command](images/passwd-command.png)
+
+---
+
+# 18. sudo
+
+## Meaning
+
+`sudo` stands for **Super User Do**.
+
+It is used to run commands with administrator/root privileges.
+
+---
+
+## Syntax
+
+```bash
+sudo command
+```
+
+---
+
+## Example
+
+```bash
+sudo apt update
+```
+
+### Output Example
+
+```bash
+[sudo] password for kali:
+```
+
+---
+
+## Screenshot
+
+![sudo command](images/sudo-command.png)
+
+---
+
+# 19. id
+
+## Meaning
+
+`id` is used to display detailed information about the current user such as:
+- User ID (UID)
+- Group ID (GID)
+- Groups
+
+---
+
+## Syntax
+
+```bash
+id
+```
+
+---
+
+## Example
+
+```bash
+id
+```
+
+### Output Example
+
+```bash
+uid=1000(kali) gid=1000(kali) groups=1000(kali)
+```
+
+---
+
+## Screenshot
+
+![id command](images/id-command.png)
 
 ---
 
@@ -683,6 +846,7 @@ Hello Linux
 
 - Linux terminal navigation
 - File and directory management
+- User management commands
 - Linux command usage
 - Understanding hidden files and permissions
 - Command-line interface practice
@@ -697,23 +861,28 @@ Linux-Commands-Practice/
 │
 ├── README.md
 │
-├── pwd-command.png
-├── ls-command.png
-├── ls-l-command.png
-├── ls-a-command.png
-├── ls-la-command-1.png
-├── ls-la-command-2.png
-├── cd-documents-command.png
-├── cd-back-command.png
-├── clear-command-1.png
-├── clear-command-2.png
-├── mkdir-command.png
-├── touch-command.png
-├── cp-command.png
-├── mv-command.png
-├── rm-command.png
-├── rm-r-command.png
-└── cat-command.png
+└── images/
+    ├── pwd-command.png
+    ├── ls-command.png
+    ├── ls-l-command.png
+    ├── ls-a-command.png
+    ├── ls-la-command-1.png
+    ├── ls-la-command-2.png
+    ├── cd-documents-command.png
+    ├── cd-back-command.png
+    ├── clear-command-1.png
+    ├── clear-command-2.png
+    ├── mkdir-command.png
+    ├── touch-command.png
+    ├── cp-command.png
+    ├── mv-command.png
+    ├── rm-command.png
+    ├── rm-r-command.png
+    ├── cat-command.png
+    ├── whoami-command.png
+    ├── passwd-command.png
+    ├── sudo-command.png
+    └── id-command.png
 ```
 
 ---
