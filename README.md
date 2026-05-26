@@ -90,7 +90,7 @@ pwd
 
 ## Screenshot
 
-![pwd command](images/pwd-command.png)
+![pwd command](pwd-command.png)
 
 ---
 
@@ -126,7 +126,7 @@ Desktop Documents Downloads Pictures Videos
 
 ## Screenshot
 
-![ls command](images/ls-command.png)
+![ls command](ls-command.png)
 
 ---
 
@@ -169,7 +169,7 @@ drwxr-xr-x 2 kali kali 4096 Desktop
 
 ## Screenshot
 
-![ls -l command](images/ls-l-command.png)
+![ls -l command](ls-l-command.png)
 
 ---
 
@@ -207,7 +207,7 @@ ls -a
 
 ## Screenshot
 
-![ls -a command](images/ls-a-command.png)
+![ls -a command](ls-a-command.png)
 
 ---
 
@@ -253,9 +253,9 @@ drwxr-xr-x kali kali Desktop
 
 ## Screenshot
 
-![ls -la command 1](images/ls-la-command-1.png)
+![ls -la command 1](ls-la-command-1.png)
 
-![ls -la command 2](images/ls-la-command-2.png)
+![ls -la command 2](ls-la-command-2.png)
 
 ---
 
@@ -294,7 +294,7 @@ pwd
 
 ## Screenshot
 
-![cd command](images/cd-documents-command.png)
+![cd command](cd-documents-command.png)
 
 ---
 
@@ -331,7 +331,7 @@ pwd
 
 ## Screenshot
 
-![cd back command](images/cd-back-command.png)
+![cd back command](cd-back-command.png)
 
 ---
 
@@ -363,9 +363,9 @@ clear
 
 ## Screenshot
 
-![clear command 1](images/clear-command-1.png)
+![clear command 1](clear-command-1.png)
 
-![clear command 2](images/clear-command-2.png)
+![clear command 2](clear-command-2.png)
 
 ---
 
@@ -411,7 +411,7 @@ Desktop Documents Downloads test
 
 ## Screenshot
 
-![mkdir command](images/mkdir-command.png)
+![mkdir command](mkdir-command.png)
 
 ---
 
@@ -455,7 +455,7 @@ file.txt
 
 ## Screenshot
 
-![touch command](images/touch-command.png)
+![touch command](touch-command.png)
 
 ---
 
@@ -501,7 +501,7 @@ file.txt copy.txt
 
 ## Screenshot
 
-![cp command](images/cp-command.png)
+![cp command](cp-command.png)
 
 ---
 
@@ -547,7 +547,7 @@ file.txt newfile.txt
 
 ## Screenshot
 
-![mv command](images/mv-command.png)
+![mv command](mv-command.png)
 
 ---
 
@@ -593,7 +593,7 @@ file.txt
 
 ## Screenshot
 
-![rm command](images/rm-command.png)
+![rm command](rm-command.png)
 
 ---
 
@@ -637,7 +637,7 @@ Desktop Documents Downloads
 
 ## Screenshot
 
-![rm -r command](images/rm-r-command.png)
+![rm -r command](rm-r-command.png)
 
 ---
 
@@ -676,7 +676,7 @@ Hello Linux
 
 ## Screenshot
 
-![cat command](images/cat-command.png)
+![cat command](cat-command.png)
 
 ---
 
@@ -712,7 +712,7 @@ kali
 
 ## Screenshot
 
-![whoami command](images/whoami-command.png)
+![whoami command](whoami-command.png)
 
 ---
 
@@ -747,13 +747,9 @@ New password:
 Retype new password:
 ```
 
-> ⚠️ Do not show your actual password in screenshots.
-
----
-
 ## Screenshot
 
-![passwd command](images/passwd-command.png)
+![passwd command](passwd-command.png)
 
 ---
 
@@ -791,7 +787,7 @@ sudo apt update
 
 ## Screenshot
 
-![sudo command](images/sudo-command.png)
+![sudo command](sudo-command.png)
 
 ---
 
@@ -830,7 +826,7 @@ uid=1000(kali) gid=1000(kali) groups=1000(kali)
 
 ## Screenshot
 
-![id command](images/id-command.png)
+![id command](id-command.png)
 
 ---
 
@@ -861,28 +857,27 @@ Linux-Commands-Practice/
 │
 ├── README.md
 │
-└── images/
-    ├── pwd-command.png
-    ├── ls-command.png
-    ├── ls-l-command.png
-    ├── ls-a-command.png
-    ├── ls-la-command-1.png
-    ├── ls-la-command-2.png
-    ├── cd-documents-command.png
-    ├── cd-back-command.png
-    ├── clear-command-1.png
-    ├── clear-command-2.png
-    ├── mkdir-command.png
-    ├── touch-command.png
-    ├── cp-command.png
-    ├── mv-command.png
-    ├── rm-command.png
-    ├── rm-r-command.png
-    ├── cat-command.png
-    ├── whoami-command.png
-    ├── passwd-command.png
-    ├── sudo-command.png
-    └── id-command.png
+├── pwd-command.png
+├── ls-command.png
+├── ls-l-command.png
+├── ls-a-command.png
+├── ls-la-command-1.png
+├── ls-la-command-2.png
+├── cd-documents-command.png
+├── cd-back-command.png
+├── clear-command-1.png
+├── clear-command-2.png
+├── mkdir-command.png
+├── touch-command.png
+├── cp-command.png
+├── mv-command.png
+├── rm-command.png
+├── rm-r-command.png
+├── cat-command.png
+├── whoami-command.png
+├── passwd-command.png
+├── sudo-command.png
+└── id-command.png
 ```
 
 ---
