@@ -758,10 +758,6 @@ New password:
 Retype new password:
 ```
 
-> ⚠️ Do not show your actual password in screenshots.
-
----
-
 ## Screenshot
 
 ![passwd command](passwd-command.png)
