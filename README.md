@@ -56,6 +56,17 @@ The purpose of this repository is to document Linux command practice and improve
 
 ---
 
+# Networking Commands
+
+- `ip a`
+- `ping google.com`
+- `ifconfig`
+- `netstat -tulnp`
+- `traceroute google.com`
+- `nslookup google.com`
+
+---
+
 # 1. pwd
 
 ## Meaning
@@ -747,6 +758,10 @@ New password:
 Retype new password:
 ```
 
+> ⚠️ Do not show your actual password in screenshots.
+
+---
+
 ## Screenshot
 
 ![passwd command](passwd-command.png)
@@ -830,6 +845,231 @@ uid=1000(kali) gid=1000(kali) groups=1000(kali)
 
 ---
 
+# 20. ip a
+
+## Meaning
+
+`ip a` is used to display IP addresses and network interface information.
+
+---
+
+## Syntax
+
+```bash
+ip a
+```
+
+---
+
+## Example
+
+```bash
+ip a
+```
+
+### Output Example
+
+```bash
+inet 192.168.1.5/24
+```
+
+---
+
+## Screenshot
+
+![ip a command](ip-a-command.png)
+
+---
+
+# 21. ping google.com
+
+## Meaning
+
+`ping` is used to check internet connectivity and test communication with another server.
+
+---
+
+## Syntax
+
+```bash
+ping google.com
+```
+
+---
+
+## Example
+
+```bash
+ping google.com
+```
+
+### Output Example
+
+```bash
+64 bytes from google.com
+```
+
+> Press `Ctrl + C` to stop the ping command.
+
+---
+
+## Screenshot
+
+![ping command](ping-command.png)
+
+---
+
+# 22. ifconfig
+
+## Meaning
+
+`ifconfig` is used to display network interface configuration details.
+
+---
+
+## Syntax
+
+```bash
+ifconfig
+```
+
+---
+
+## Example
+
+```bash
+ifconfig
+```
+
+### Output Example
+
+```bash
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>
+```
+
+---
+
+## Screenshot
+
+![ifconfig command](ifconfig-command.png)
+
+---
+
+# 23. netstat -tulnp
+
+## Meaning
+
+`netstat -tulnp` is used to display:
+- open ports
+- active services
+- listening connections
+- process IDs
+
+---
+
+## Syntax
+
+```bash
+netstat -tulnp
+```
+
+---
+
+## Example
+
+```bash
+netstat -tulnp
+```
+
+### Output Example
+
+```bash
+tcp LISTEN 0 128 0.0.0.0:22
+```
+
+> Some details may require `sudo` privileges.
+
+---
+
+## Screenshot
+
+![netstat command](netstat-command.png)
+
+---
+
+# 24. traceroute google.com
+
+## Meaning
+
+`traceroute` is used to display the path packets take from your system to a destination server.
+
+---
+
+## Syntax
+
+```bash
+traceroute google.com
+```
+
+---
+
+## Example
+
+```bash
+traceroute google.com
+```
+
+### Output Example
+
+```bash
+1 192.168.1.1
+2 * * *
+```
+
+---
+
+## Screenshot
+
+![traceroute command](traceroute-command.png)
+
+---
+
+# 25. nslookup google.com
+
+## Meaning
+
+`nslookup` is used for DNS lookup and finding the IP address of a domain.
+
+---
+
+## Syntax
+
+```bash
+nslookup google.com
+```
+
+---
+
+## Example
+
+```bash
+nslookup google.com
+```
+
+### Output Example
+
+```bash
+Address: 142.250.xxx.xxx
+```
+
+---
+
+## Screenshot
+
+![nslookup command](nslookup-command.png)
+
+---
+
 # Tools Used
 
 - Kali Linux
@@ -843,6 +1083,7 @@ uid=1000(kali) gid=1000(kali) groups=1000(kali)
 - Linux terminal navigation
 - File and directory management
 - User management commands
+- Linux networking basics
 - Linux command usage
 - Understanding hidden files and permissions
 - Command-line interface practice
@@ -856,7 +1097,6 @@ uid=1000(kali) gid=1000(kali) groups=1000(kali)
 Linux-Commands-Practice/
 │
 ├── README.md
-│
 ├── pwd-command.png
 ├── ls-command.png
 ├── ls-l-command.png
@@ -877,7 +1117,13 @@ Linux-Commands-Practice/
 ├── whoami-command.png
 ├── passwd-command.png
 ├── sudo-command.png
-└── id-command.png
+├── id-command.png
+├── ip-a-command.png
+├── ping-command.png
+├── ifconfig-command.png
+├── netstat-command.png
+├── traceroute-command.png
+└── nslookup-command.png
 ```
 
 ---
