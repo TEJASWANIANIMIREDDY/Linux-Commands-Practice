@@ -67,6 +67,15 @@ The purpose of this repository is to document Linux command practice and improve
 
 ---
 
+# Package Management Commands
+
+- `sudo apt update`
+- `sudo apt upgrade`
+- `sudo apt install`
+- `sudo apt remove`
+
+---
+
 # 1. pwd
 
 ## Meaning
@@ -1066,6 +1075,164 @@ Address: 142.250.xxx.xxx
 
 ---
 
+# 26. sudo apt update
+
+## Meaning
+
+`sudo apt update` updates the package list from repositories.
+
+It checks:
+- newest package versions
+- available updates
+- security updates
+
+This command does **not** install updates.
+
+Think of it as:
+
+> "Check what updates are available."
+
+---
+
+## Syntax
+
+```bash
+sudo apt update
+```
+
+---
+
+## Example
+
+```bash
+sudo apt update
+```
+
+### Output Example
+
+```bash
+Fetched 5 MB in 3s
+Reading package lists... Done
+```
+
+---
+
+## Screenshot
+
+![apt update command](apt-update-command.png)
+
+---
+
+# 27. sudo apt upgrade
+
+## Meaning
+
+`sudo apt upgrade` upgrades installed packages to their latest available versions.
+
+---
+
+## Syntax
+
+```bash
+sudo apt upgrade
+```
+
+---
+
+## Example
+
+```bash
+sudo apt upgrade
+```
+
+### Output Example
+
+```bash
+Do you want to continue? [Y/n]
+```
+
+---
+
+## Screenshot
+
+![apt upgrade command](apt-upgrade-command.png)
+
+---
+
+# 28. sudo apt install nmap
+
+## Meaning
+
+`sudo apt install` is used to install software packages from repositories.
+
+---
+
+## Syntax
+
+```bash
+sudo apt install package-name
+```
+
+---
+
+## Example
+
+```bash
+sudo apt install nmap
+```
+
+### Output Example
+
+```bash
+The following NEW packages will be installed:
+nmap
+```
+
+---
+
+## Screenshot
+
+![apt install command](apt-install-command.png)
+
+---
+
+# 29. sudo apt remove nmap
+
+## Meaning
+
+`sudo apt remove` is used to uninstall software packages.
+
+---
+
+## Syntax
+
+```bash
+sudo apt remove package-name
+```
+
+---
+
+## Example
+
+```bash
+sudo apt remove nmap
+```
+
+### Output Example
+
+```bash
+The following packages will be REMOVED:
+nmap
+```
+
+---
+
+## Screenshot
+
+![apt remove command](apt-remove-command.png)
+
+---
+
 # Tools Used
 
 - Kali Linux
@@ -1119,7 +1286,12 @@ Linux-Commands-Practice/
 ├── ifconfig-command.png
 ├── netstat-command.png
 ├── traceroute-command.png
-└── nslookup-command.png
+├── nslookup-command.png
+├── apt-update-command.png
+├── apt-upgrade-command.png
+├──apt-install-command.png
+└── apt-remove-command.png
+
 ```
 
 ---
