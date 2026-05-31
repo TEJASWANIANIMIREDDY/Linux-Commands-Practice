@@ -1276,35 +1276,35 @@ Make it executable:
 chmod +x script.sh
 ```
 
-Run the script:
+Verify permissions:
 
 ```bash
-./script.sh
+ls -l script.sh
 ```
 
 ### Output Example
 
 ```bash
-Hello
+-rwxr-xr-x 1 kali kali 25 May 31 script.sh
 ```
 
 ---
 
 ## Screenshot
 
-![chmod command](chmod-command.png)
+![chmod +x command](chmod-x-command.png)
 
 ---
 
-# 31. chmod 777 file.sh
+# 31. chmod 777 file.txt
 
 ## Meaning
 
 `chmod 777` gives full permissions to everyone.
 
-- Owner: Read, Write, Execute
-- Group: Read, Write, Execute
-- Others: Read, Write, Execute
+* Owner: Read, Write, Execute
+* Group: Read, Write, Execute
+* Others: Read, Write, Execute
 
 ---
 
@@ -1319,20 +1319,46 @@ chmod 777 filename
 ## Example
 
 ```bash
-chmod 777 script.sh
+chmod 777 file.txt
 ```
 
 Check permissions:
 
 ```bash
-ls -l script.sh
+ls -l file.txt
 ```
 
 ### Output Example
 
 ```bash
--rwxrwxrwx 1 kali kali 25 May 31 script.sh
+-rwxrwxrwx 1 kali kali 25 May 31 file.txt
 ```
+
+---
+
+## Permission Breakdown
+
+| Number | Permission             |
+| ------ | ---------------------- |
+| 7      | Read + Write + Execute |
+| 7      | Read + Write + Execute |
+| 7      | Read + Write + Execute |
+
+Result:
+
+```text
+Owner  = rwx
+Group  = rwx
+Others = rwx
+```
+
+---
+
+## Important
+
+⚠️ `777` is not recommended for sensitive files because everyone gets full access.
+
+Use only for learning and testing purposes.
 
 ---
 
@@ -1378,11 +1404,15 @@ ls -l script.sh
 -rwxr-xr-x 1 kali kali 25 May 31 script.sh
 ```
 
+> Note: If the file already belongs to `kali:kali`, the ownership may appear unchanged.
+
 ---
 
 ## Screenshot
 
-![chown command](chown-command.png)
+![chown command](chown-command-1.png)
+
+![chown command](chown-command-2.png)
 
 ---
 
@@ -1390,14 +1420,11 @@ ls -l script.sh
 
 ## Meaning
 
-`top` is used to display running processes and system resource usage in real time.
+`top` displays live system activity and running processes.
 
-It shows:
+Think of it as:
 
-- CPU usage
-- Memory usage
-- Running processes
-- Process IDs (PID)
+> Linux Task Manager
 
 ---
 
@@ -1417,7 +1444,7 @@ top
 
 ### Output Example
 
-```bash
+```text
 top - 03:14:53 up 41 min, 1 user, load average: 0.15, 0.19, 0.16
 
 Tasks: 250 total, 1 running, 249 sleeping
@@ -1456,11 +1483,11 @@ to quit the `top` screen.
 
 It shows:
 
-- Process owner
-- Process ID (PID)
-- CPU usage
-- Memory usage
-- Command name
+* Process owner
+* Process ID (PID)
+* CPU usage
+* Memory usage
+* Command name
 
 ---
 
@@ -1480,7 +1507,7 @@ ps aux
 
 ### Output Example
 
-```bash
+```text
 USER       PID %CPU %MEM COMMAND
 root         1  0.0  0.7 /sbin/init
 root         2  0.0  0.0 [kthreadd]
@@ -1491,13 +1518,13 @@ kali      2540  1.2  2.1 firefox
 
 ## Important Columns
 
-| Column | Meaning |
-|----------|----------|
-| USER | Process owner |
-| PID | Process ID |
-| %CPU | CPU usage |
-| %MEM | Memory usage |
-| COMMAND | Program name |
+| Column  | Meaning       |
+| ------- | ------------- |
+| USER    | Process Owner |
+| PID     | Process ID    |
+| %CPU    | CPU Usage     |
+| %MEM    | Memory Usage  |
+| COMMAND | Program Name  |
 
 ---
 
@@ -1547,15 +1574,13 @@ kill 2500
 
 ---
 
-## Output Example
-
-The process stops running and disappears from the process list.
-
-Verify:
+## Verification
 
 ```bash
 ps aux | grep sleep
 ```
+
+The process should no longer appear in the process list.
 
 ---
 
@@ -1569,9 +1594,11 @@ Every running process in Linux has a unique PID.
 
 ## Screenshot
 
-![kill command](kill-command.png)
+![kill command](kill-command-1.png)
 
----
+![kill command](kill-command-2.png)
+
+```
 
 # Tools Used
 
@@ -1629,9 +1656,16 @@ Linux-Commands-Practice/
 ├── nslookup-command.png
 ├── apt-update-command.png
 ├── apt-upgrade-command.png
-├──apt-install-command.png
-└── apt-remove-command.png
-
+├── apt-install-command.png
+├── apt-remove-command.png
+├── chmod-x-command.png
+├── chmod-777-command.png
+├── chown-command-1.png
+├── chown-command-2.png
+├── top-command.png
+├── ps-aux-command.png
+├── kill-command-1.png
+└── kill-command-2.png
 ```
 
 ---
