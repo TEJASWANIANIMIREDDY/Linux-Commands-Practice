@@ -1658,8 +1658,7 @@ Linux-Commands-Practice/
 ├── apt-remove-command.png
 ├── chmod-x-command.png
 ├── chmod-777-command.png
-├── chown-command-1.png
-├── chown-command-2.png
+├── chown-command.png
 ├── top-command.png
 ├── ps-aux-command.png
 ├── kill-command-1.png
