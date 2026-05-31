@@ -76,6 +76,15 @@ The purpose of this repository is to document Linux command practice and improve
 
 ---
 
+chmod-x-command.png
+chmod-777-command.png
+chown-command.png
+top-command.png
+ps-aux-command.png
+kill-command.png
+
+---
+
 # 1. pwd
 
 ## Meaning
@@ -1230,6 +1239,337 @@ nmap
 ## Screenshot
 
 ![apt remove command](apt-remove-command.png)
+
+---
+
+# 30. chmod +x file.sh
+
+## Meaning
+
+`chmod` stands for **Change Mode**.
+
+It is used to change file permissions.
+
+The `+x` option adds execute permission to a file.
+
+---
+
+## Syntax
+
+```bash
+chmod +x filename
+```
+
+---
+
+## Example
+
+Create a script:
+
+```bash
+touch script.sh
+```
+
+Make it executable:
+
+```bash
+chmod +x script.sh
+```
+
+Run the script:
+
+```bash
+./script.sh
+```
+
+### Output Example
+
+```bash
+Hello
+```
+
+---
+
+## Screenshot
+
+![chmod command](chmod-command.png)
+
+---
+
+# 31. chmod 777 file.sh
+
+## Meaning
+
+`chmod 777` gives full permissions to everyone.
+
+- Owner: Read, Write, Execute
+- Group: Read, Write, Execute
+- Others: Read, Write, Execute
+
+---
+
+## Syntax
+
+```bash
+chmod 777 filename
+```
+
+---
+
+## Example
+
+```bash
+chmod 777 script.sh
+```
+
+Check permissions:
+
+```bash
+ls -l script.sh
+```
+
+### Output Example
+
+```bash
+-rwxrwxrwx 1 kali kali 25 May 31 script.sh
+```
+
+---
+
+## Screenshot
+
+![chmod 777 command](chmod-777-command.png)
+
+---
+
+# 32. chown user:group file
+
+## Meaning
+
+`chown` stands for **Change Owner**.
+
+It is used to change the ownership of a file or directory.
+
+---
+
+## Syntax
+
+```bash
+sudo chown user:group filename
+```
+
+---
+
+## Example
+
+```bash
+sudo chown kali:kali script.sh
+```
+
+Check ownership:
+
+```bash
+ls -l script.sh
+```
+
+### Output Example
+
+```bash
+-rwxr-xr-x 1 kali kali 25 May 31 script.sh
+```
+
+---
+
+## Screenshot
+
+![chown command](chown-command.png)
+
+---
+
+# 33. top
+
+## Meaning
+
+`top` is used to display running processes and system resource usage in real time.
+
+It shows:
+
+- CPU usage
+- Memory usage
+- Running processes
+- Process IDs (PID)
+
+---
+
+## Syntax
+
+```bash
+top
+```
+
+---
+
+## Example
+
+```bash
+top
+```
+
+### Output Example
+
+```bash
+top - 03:14:53 up 41 min, 1 user, load average: 0.15, 0.19, 0.16
+
+Tasks: 250 total, 1 running, 249 sleeping
+
+%Cpu(s): 2.0 us, 1.0 sy, 97.0 id
+
+PID USER      %CPU %MEM COMMAND
+1234 kali      1.0  0.5 firefox
+```
+
+---
+
+## Exit
+
+Press:
+
+```text
+q
+```
+
+to quit the `top` screen.
+
+---
+
+## Screenshot
+
+![top command](top-command.png)
+
+---
+
+# 34. ps aux
+
+## Meaning
+
+`ps aux` displays all currently running processes on the system.
+
+It shows:
+
+- Process owner
+- Process ID (PID)
+- CPU usage
+- Memory usage
+- Command name
+
+---
+
+## Syntax
+
+```bash
+ps aux
+```
+
+---
+
+## Example
+
+```bash
+ps aux
+```
+
+### Output Example
+
+```bash
+USER       PID %CPU %MEM COMMAND
+root         1  0.0  0.7 /sbin/init
+root         2  0.0  0.0 [kthreadd]
+kali      2540  1.2  2.1 firefox
+```
+
+---
+
+## Important Columns
+
+| Column | Meaning |
+|----------|----------|
+| USER | Process owner |
+| PID | Process ID |
+| %CPU | CPU usage |
+| %MEM | Memory usage |
+| COMMAND | Program name |
+
+---
+
+## Screenshot
+
+![ps aux command](ps-aux-command.png)
+
+---
+
+# 35. kill PID
+
+## Meaning
+
+`kill` is used to stop a running process.
+
+A process is identified using its Process ID (PID).
+
+---
+
+## Syntax
+
+```bash
+kill PID
+```
+
+---
+
+## Example
+
+Find a process:
+
+```bash
+ps aux | grep sleep
+```
+
+Output:
+
+```bash
+kali 2500 0.0 0.0 sleep 300
+```
+
+Kill the process:
+
+```bash
+kill 2500
+```
+
+---
+
+## Output Example
+
+The process stops running and disappears from the process list.
+
+Verify:
+
+```bash
+ps aux | grep sleep
+```
+
+---
+
+## Note
+
+PID stands for **Process ID**.
+
+Every running process in Linux has a unique PID.
+
+---
+
+## Screenshot
+
+![kill command](kill-command.png)
 
 ---
 
