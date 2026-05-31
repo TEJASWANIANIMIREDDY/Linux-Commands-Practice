@@ -1410,9 +1410,7 @@ ls -l script.sh
 
 ## Screenshot
 
-![chown command](chown-command-1.png)
-
-![chown command](chown-command-2.png)
+![chown command](chown-command.png)
 
 ---
 
