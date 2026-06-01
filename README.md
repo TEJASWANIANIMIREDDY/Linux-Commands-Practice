@@ -85,6 +85,16 @@ kill-command.png
 
 ---
 
+# Cybersecurity Tools Commands
+
+- `whois domain.com`
+- `nmap target_ip`
+- `wireshark`
+- `hydra`
+- `sqlmap`
+
+---
+
 # 1. pwd
 
 ## Meaning
