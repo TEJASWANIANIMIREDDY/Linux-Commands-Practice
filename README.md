@@ -76,13 +76,17 @@ The purpose of this repository is to document Linux command practice and improve
 
 ---
 
-chmod-x-command.png
-chmod-777-command.png
-chown-command.png
-top-command.png
-ps-aux-command.png
-kill-command.png
+# Permissions Commands
 
+- `chmod +x`
+- `chmod 777`
+- `chown`
+
+# Process Commands
+
+- `top`
+- `ps aux`
+- `kill`
 ---
 
 # Cybersecurity Tools Commands
