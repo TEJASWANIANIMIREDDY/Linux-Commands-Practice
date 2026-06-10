@@ -94,8 +94,6 @@ The purpose of this repository is to document Linux command practice and improve
 - `whois domain.com`
 - `nmap target_ip`
 - `wireshark`
-- `hydra`
-- `sqlmap`
 
 ---
 
@@ -1612,6 +1610,158 @@ Every running process in Linux has a unique PID.
 
 ```
 
+ # 36. whois domain.com
+
+## Meaning
+
+`whois` is used to retrieve information about a domain name.
+
+It can provide details such as:
+
+* Registrar
+* Creation date
+* Expiry date
+* Name servers
+
+Think of it as:
+
+> "Who owns this website?"
+
+---
+
+## Syntax
+
+```bash
+whois domain.com
+```
+
+---
+
+## Example
+
+```bash
+whois google.com
+```
+
+### Output Example
+
+```text
+Domain Name: GOOGLE.COM
+Registrar: MarkMonitor
+Creation Date: 1997
+```
+
+---
+
+## Screenshot
+
+![whois command](whois-command.png)
+
+---
+
+# 37. nmap target_ip
+
+## Meaning
+
+`nmap` stands for **Network Mapper**.
+
+It is used to discover:
+
+* Open ports
+* Running services
+* Devices on a network
+
+Think of it as:
+
+> "Checking which doors are open."
+
+---
+
+## Syntax
+
+```bash
+nmap target_ip
+```
+
+---
+
+## Example
+
+```bash
+nmap scanme.nmap.org
+```
+
+### Output Example
+
+```text
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+```
+
+---
+
+## Screenshot
+
+![nmap command](nmap-command.png)
+
+---
+
+# 38. wireshark
+
+## Meaning
+
+Wireshark is a packet analysis tool used to capture and inspect network traffic.
+
+Think of it as:
+
+> "A microscope for network communication."
+
+---
+
+## Launch
+
+```bash
+wireshark
+```
+
+---
+
+## What You Can See
+
+* DNS requests
+* HTTP traffic
+* TCP packets
+* IP addresses
+
+### Output Example
+
+```text
+192.168.1.5 → google.com
+DNS Query
+```
+
+---
+
+## Screenshot
+
+![wireshark command](wireshark-command.png)
+
+---
+
+# Quick Memory Table
+
+| Tool        | Purpose                    |
+| ----------- | -------------------------- |
+| `whois`     | Domain information lookup  |
+| `nmap`      | Network and port discovery |
+| `wireshark` | Packet analysis            |
+
+```
+```
+
+
 # Tools Used
 
 - Kali Linux
@@ -1633,51 +1783,17 @@ Every running process in Linux has a unique PID.
 
 ---
 
-# Project Structure
-
-```text
-Linux-Commands-Practice/
+Linux-Commands-Practice
 │
-├── README.md
-├── pwd-command.png
-├── ls-command.png
-├── ls-l-command.png
-├── ls-a-command.png
-├── ls-la-command-1.png
-├── ls-la-command-2.png
-├── cd-documents-command.png
-├── cd-back-command.png
-├── clear-command-1.png
-├── clear-command-2.png
-├── mkdir-command.png
-├── touch-command.png
-├── cp-command.png
-├── mv-command.png
-├── rm-command.png
-├── rm-r-command.png
-├── cat-command.png
-├── whoami-command.png
-├── passwd-command.png
-├── sudo-command.png
-├── id-command.png
-├── ip-a-command.png
-├── ping-command.png
-├── ifconfig-command.png
-├── netstat-command.png
-├── traceroute-command.png
-├── nslookup-command.png
-├── apt-update-command.png
-├── apt-upgrade-command.png
-├── apt-install-command.png
-├── apt-remove-command.png
-├── chmod-x-command.png
-├── chmod-777-command.png
-├── chown-command.png
-├── top-command.png
-├── ps-aux-command.png
-├── kill-command-1.png
-└── kill-command-2.png
-```
+├── Navigation Commands (1-8)
+├── File Management Commands (9-15)
+├── User Management Commands (16-19)
+├── Networking Commands (20-25)
+├── Package Management Commands (26-29)
+├── Permissions Commands (30-32)
+├── Process Management Commands (33-35)
+├── Cybersecurity Tools Commands (36-38)
+└── Git Commands (Future)```
 
 ---
 
