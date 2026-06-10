@@ -1783,6 +1783,9 @@ DNS Query
 
 ---
 
+## Repository Structure
+
+```text
 Linux-Commands-Practice
 │
 ├── Navigation Commands (1-8)
@@ -1834,12 +1837,11 @@ Linux-Commands-Practice
 │   ├── ps aux
 │   └── kill PID
 │
-├── Cybersecurity Tools Commands (36-38)
+└── Cybersecurity Tools Commands (36-38)
     ├── whois domain.com
     ├── nmap
     └── wireshark
-    
----
+```
 
 # Future Improvements
 
