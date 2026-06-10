@@ -1782,20 +1782,63 @@ DNS Query
 - Documentation using GitHub
 
 ---
-#structure
 
 Linux-Commands-Practice
 │
 ├── Navigation Commands (1-8)
+│   ├── pwd
+│   ├── ls
+│   ├── ls -l
+│   ├── ls -a
+│   ├── ls -la
+│   ├── cd
+│   ├── cd ..
+│   └── clear
+│
 ├── File Management Commands (9-15)
+│   ├── mkdir
+│   ├── touch
+│   ├── cp
+│   ├── mv
+│   ├── rm
+│   ├── rm -r
+│   └── cat
+│
 ├── User Management Commands (16-19)
+│   ├── whoami
+│   ├── passwd
+│   ├── sudo
+│   └── id
+│
 ├── Networking Commands (20-25)
+│   ├── ip a
+│   ├── ping google.com
+│   ├── ifconfig
+│   ├── netstat -tulnp
+│   ├── traceroute google.com
+│   └── nslookup google.com
+│
 ├── Package Management Commands (26-29)
+│   ├── sudo apt update
+│   ├── sudo apt upgrade
+│   ├── sudo apt install <package-name>
+│   └── sudo apt remove <package-name>
+│
 ├── Permissions Commands (30-32)
+│   ├── chmod +x file.sh
+│   ├── chmod 777 file.txt
+│   └── chown user:group file
+│
 ├── Process Management Commands (33-35)
+│   ├── top
+│   ├── ps aux
+│   └── kill PID
+│
 ├── Cybersecurity Tools Commands (36-38)
-└── Git Commands (Future)
-
+    ├── whois domain.com
+    ├── nmap
+    └── wireshark
+    
 ---
 
 # Future Improvements
