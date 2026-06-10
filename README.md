@@ -1782,6 +1782,7 @@ DNS Query
 - Documentation using GitHub
 
 ---
+#structure
 
 Linux-Commands-Practice
 │
@@ -1793,7 +1794,7 @@ Linux-Commands-Practice
 ├── Permissions Commands (30-32)
 ├── Process Management Commands (33-35)
 ├── Cybersecurity Tools Commands (36-38)
-└── Git Commands (Future)```
+└── Git Commands (Future)
 
 ---
 
