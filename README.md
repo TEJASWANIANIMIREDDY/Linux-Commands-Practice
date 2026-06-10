@@ -1608,7 +1608,7 @@ Every running process in Linux has a unique PID.
 
 ![kill command](kill-command-2.png)
 
-```
+---
 
  # 36. whois domain.com
 
